@@ -31,3 +31,7 @@ class Car(db.Model):
     user = db.relationship("User")
 
 # TODO: Add your models below, remember to add a new migration and upgrade database
+
+class MyInfo(db.Model):
+    id = db.Colum(db.Integar, primary_key=True)
+    
