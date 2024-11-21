@@ -5,9 +5,9 @@ function Contact() {
     <div className="contact">
       <h1>Contact Me</h1>
       <p>Name</p>
-      <p>Email: Email</p>
+      <p>Email</p>
       <p>Phone: Phone</p>
-      <p>LinkedIn: LinkedIn</p>
+      <a href="https://www.linkedin.com/in/xaivntaaj-her/">LinkedIn</a>
     </div>
   );
 }
