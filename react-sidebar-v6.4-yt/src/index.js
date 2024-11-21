@@ -7,12 +7,13 @@ import {
   Link,
   Outlet,
 } from "react-router-dom";
-import Home from "./routes/Home";
-import About from "./routes/About";
-import Projects from "./routes/Projects";
-import Contact from "./routes/Contact";
+import Home from "./routes/Home/Home";
+import About from "./routes/About/About";
+import Projects from "./routes/Projects/Projects";
+import Contact from "./routes/Contact/Contact";
 import Navbar from "./components/Navbar";
 import "./App.css";
+import "./routes/About/About.css";
 
 const Applayout = () => (
   <>

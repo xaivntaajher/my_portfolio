@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-
+/* Global styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,6 +6,7 @@
   font-family: "Lato", sans-serif;
 }
 
+/* Home, About, Projects, and Contact Section Styles */
 .home,
 .about,
 .projects,
@@ -20,13 +20,14 @@
   color: #fff;
 }
 
-/* Navbar CSS */
+/* Navbar Styles */
 .navbar {
   background-color: #ffffff;
   height: 80px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding: 0 20px;
 }
 
 .menu-bars {
@@ -34,8 +35,10 @@
   font-size: 2rem;
   background: none;
   color: #000;
+  cursor: pointer;
 }
 
+/* Sidebar Menu Styles */
 .nav-menu {
   background-color: #ffffff;
   width: 250px;
@@ -51,6 +54,11 @@
 .nav-menu.active {
   left: 0;
   transition: 450ms;
+}
+
+.nav-menu-items {
+  width: 100%;
+  padding: 0;
 }
 
 .nav-text {
@@ -72,6 +80,7 @@
   align-items: center;
   padding: 0 16px;
   border-radius: 4px;
+  gap: 10px; /* Adds space between the icon and text */
 }
 
 .nav-text a:hover {
@@ -79,19 +88,30 @@
   color: #fff;
 }
 
-.nav-menu-items {
-  width: 100%;
-}
+/* Responsive Menu */
+@media screen and (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+  }
 
-.navbar-toggle {
-  background-color: #ffffff;
-  width: 100%;
-  height: 80px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  .menu-bars {
+    font-size: 2.5rem;
+  }
+
+  .nav-menu {
+    width: 200px;
+  }
+
+  .nav-text a {
+    font-size: 16px;
+  }
 }
 
 span {
   margin-left: 16px;
+}
+
+/* Icon Styling */
+.nav-text a svg {
+  font-size: 24px; /* Control icon size */
 }
