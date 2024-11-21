@@ -14,6 +14,8 @@ import Contact from "./routes/Contact/Contact";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import "./routes/About/About.css";
+import "./routes/Contact/Contact.css";
+import "./routes/Projects/Projects.css";
 
 const Applayout = () => (
   <>

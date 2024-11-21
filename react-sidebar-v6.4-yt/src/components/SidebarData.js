@@ -21,6 +21,23 @@ export const SidebarData = [
     path: "/projects",
     icons: <AiIcons.AiOutlineProject />,
     cName: "nav-text",
+    submenu: [
+      {
+        title: "Web Development",
+        path: "/projects/web-development",
+        icons: <AiIcons.AiOutlineCode />,
+      },
+      {
+        title: "Machine Learning",
+        path: "/projects/machine-learning",
+        icons: <AiIcons.AiOutlineRobot />,
+      },
+      {
+        title: "Mobile Apps",
+        path: "/projects/mobile-apps",
+        icons: <AiIcons.AiOutlineMobile />,
+      },
+    ],
   },
   {
     title: "Contact",
